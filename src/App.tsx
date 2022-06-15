@@ -79,6 +79,7 @@ function App() {
 
         console.log("Initialize payment");
         let nftTxn = await nftContract.mintNFTs(1, {
+          gasLimit: 1600000,
           value: ethers.utils.parseEther("0.01"),
         });
 
