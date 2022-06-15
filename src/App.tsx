@@ -135,8 +135,12 @@ function App() {
         <div className="container">
           <Header opensea={openseaLink} />
           <div className="header-container">
-            <div className="banner-img">
-              <img src={squirrelImg} alt="Polygon Squirrels" />
+            <div className="flex justify-center items-center mb-12">
+              <img
+                src={squirrelImg}
+                className="max-h-60"
+                alt="Polygon Squirrels"
+              />
             </div>
             {currentAccount && mineStatus !== "mining" && renderMintUI()}
             {!currentAccount && !mineStatus && renderNotConnectedContainer()}

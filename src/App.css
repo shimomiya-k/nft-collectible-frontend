@@ -35,15 +35,6 @@ body {
   color: white;
 }
 
-.banner-img {
-  margin-bottom: 50px;
-}
-
-.banner-img img {
-  max-height: 250px;
-  max-width: 100%;
-}
-
 .header-container {
   padding-top: 30px;
 }

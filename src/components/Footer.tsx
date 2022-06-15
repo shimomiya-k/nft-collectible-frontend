@@ -1,6 +1,5 @@
-import twitter_white from "../assets/twitter.png";
+import facebook_white from "../assets/facebook.png";
 import discord_white from "../assets/discord.png";
-import instagram_white from "../assets/instagram.png";
 
 export interface FooterProps {
   address: string;
@@ -14,7 +13,7 @@ export default function Footer(props: FooterProps) {
         <br />
         <span>
           <a
-            className="contract-link"
+            className="decoration-sky-500/30 underline"
             href={`https://mumbai.polygonscan.com/address/${props.address}`}
             target="_blank"
             rel="noreferrer"
@@ -23,28 +22,20 @@ export default function Footer(props: FooterProps) {
           </a>
         </span>
       </p>
-      <div className="footer-social-media-links">
-        <div>
-          <a href="PASTE-YOUR-DISCORD-LINK-HERE">
+      <div className="flex flex-row justify-center items-center gap-2">
+        <div className="w-4">
+          <a href="https://discord.com/users/799187521875214346">
             <img src={discord_white} alt="Discord" />
           </a>
         </div>
-        <div>
+
+        <div className="w-4">
           <a
-            href="PASTE-YOUR-INSTAGRAM-LINK-HERE"
+            href="https://www.facebook.com/kazuma.shimomiya"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={instagram_white} alt="Instagram" />
-          </a>
-        </div>
-        <div>
-          <a
-            href="PASTE-YOUR-TWITTER-LINK-HERE"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={twitter_white} alt="Twitter" />
+            <img src={facebook_white} alt="Facebook" />
           </a>
         </div>
       </div>
